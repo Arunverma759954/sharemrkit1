@@ -74,7 +74,7 @@ export default function AboutClient() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl text-black md:text-4xl font-bold mb-6">
               Academy Fueled by{" "}
               <span className="text-[#7ED321]">Deep Passion</span>
             </h2>
@@ -99,7 +99,7 @@ export default function AboutClient() {
 
           <div className="bg-gray-50 rounded-2xl p-10 shadow-lg">
             <TrendingUp className="w-14 h-14 text-[#7ED321] mb-5" />
-            <h4 className="text-xl font-semibold mb-3">
+            <h4 className="text-xl text-black font-semibold mb-3">
               Experiences Fueled by Passion & Expertise
             </h4>
             <p className="text-gray-600">
@@ -168,7 +168,7 @@ export default function AboutClient() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="md:text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl text-black md:text-4xl font-bold">
               Why Our{" "}
               <span className="text-[#7ED321]">Academy Is Different</span>
             </h2>
@@ -178,7 +178,7 @@ export default function AboutClient() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 text-black gap-8">
             <WhyCard icon={Lightbulb} title="Innovative Learning">
               Simplified concepts with real market examples.
             </WhyCard>
@@ -212,7 +212,7 @@ export default function AboutClient() {
       {/* ================= TEAM ================= */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 md:text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl text-black font-bold mb-6">
             Meet Our <span className="text-[#7ED321]">Team</span>
           </h2>
 
@@ -220,7 +220,7 @@ export default function AboutClient() {
             Our team brings together trading expertise and teaching excellence.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 text-black md:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div
                 key={index}

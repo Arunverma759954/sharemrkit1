@@ -64,7 +64,7 @@ export default function CoursesClient() {
       {/* ================= INTRO SECTION (NEW) ================= */}
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl text-black md:text-4xl font-bold mb-4">
             Learn Stock Market the <span className="text-[#7ED321]">Right Way</span>
           </h2>
 
@@ -81,7 +81,7 @@ export default function CoursesClient() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="md:text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl text-black md:text-4xl font-bold">
               Learn. Trade. <span className="text-[#7ED321]">Grow.</span>
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -89,7 +89,7 @@ export default function CoursesClient() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 text-black md:grid-cols-3 gap-8">
             {courses.map((course, index) => (
               <div
                 key={index}

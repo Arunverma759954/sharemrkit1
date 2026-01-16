@@ -44,7 +44,7 @@ export default function InvestmentClient() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl text-black font-bold mb-6">
               Invest with <span className="text-[#7ED321]">Confidence</span>
             </h2>
 
@@ -61,7 +61,7 @@ export default function InvestmentClient() {
 
           <div className="bg-gray-50 rounded-2xl p-10 shadow-lg">
             <TrendingUp className="w-14 h-14 text-[#7ED321] mb-5" />
-            <h4 className="text-xl font-semibold mb-3">
+            <h4 className="text-xl text-black font-semibold mb-3">
               Long-Term Wealth Creation
             </h4>
             <p className="text-gray-600">
@@ -76,7 +76,7 @@ export default function InvestmentClient() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="md:text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl text-black md:text-4xl font-bold">
               Our <span className="text-[#7ED321]">Investment Services</span>
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
@@ -84,7 +84,7 @@ export default function InvestmentClient() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 text-black gap-8">
             <ServiceCard
               icon={Wallet}
               title="Mutual Fund Investments"

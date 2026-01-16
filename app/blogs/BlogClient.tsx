@@ -68,7 +68,7 @@ export default function BlogClient() {
             / Blogs
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-4xl  md:text-6xl font-bold">
             Our <span className="text-[#7ED321]">Blogs</span>
           </h1>
 
@@ -82,7 +82,7 @@ export default function BlogClient() {
       {/* ================= INTRO ================= */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl text-black md:text-4xl font-bold mb-4">
             Our <span className="text-[#7ED321]">Latest Blog</span>
           </h2>
           <p className="text-gray-600 text-lg">
@@ -114,7 +114,7 @@ export default function BlogClient() {
 
       {/* ================= BLOG GRID ================= */}
       <section className="py-14 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="max-w-7xl mx-auto px-6 text-black grid grid-cols-1 sm:grid-cols-2 gap-10">
           {blogs.map((blog, index) => (
             <div
               key={index}
