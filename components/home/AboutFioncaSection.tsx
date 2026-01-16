@@ -13,7 +13,7 @@ export default function AboutFioncaSection() {
         {/* Left: Image with bottom-left circular play button */}
         <div className="w-full lg:w-1/2 relative bg-white rounded-xl overflow-hidden shadow-lg">
           <Image
-            src="/ashish.png"
+            src="/team/Ash.jpeg"
             alt="Fionca About"
             width={600}
             height={400}
