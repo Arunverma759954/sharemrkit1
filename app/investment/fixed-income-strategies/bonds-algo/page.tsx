@@ -66,7 +66,7 @@ export default function BondsAlgoPage() {
 
           {/* Section 1 */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-3 flex items-center gap-2">
+            <h2 className="text-2xl text-black font-semibold mb-3 flex items-center gap-2">
               <Lock className="text-[#7ED321]" />
               1. The Core: Best-in-Class Rated Bonds
             </h2>
@@ -96,7 +96,7 @@ export default function BondsAlgoPage() {
 
           {/* Section 2 */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-3 flex items-center gap-2">
+            <h2 className="text-2xl font-semibold mb-3 text-black flex items-center gap-2">
               <TrendingUp className="text-[#7ED321]" />
               2. The Booster: “Pledge & Trade” Algo
             </h2>
@@ -126,7 +126,7 @@ export default function BondsAlgoPage() {
 
           {/* Safety */}
           <div className="bg-green-50 border border-green-200 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <h2 className="text-2xl text-black font-semibold mb-4 flex items-center gap-2">
               <ShieldCheck className="text-green-600" />
               Safety Protocols: Secure & Disciplined
             </h2>
@@ -149,12 +149,12 @@ export default function BondsAlgoPage() {
 
           {/* Comparison Table */}
           <div className="bg-white rounded-xl shadow p-8">
-            <h2 className="text-2xl font-semibold mb-6">
+            <h2 className="text-2xl text-black font-semibold mb-6">
               Why Choose the Bond + Algo Hybrid?
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full border">
+              <table className="w-full border text-black">
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="p-3 border">Feature</th>

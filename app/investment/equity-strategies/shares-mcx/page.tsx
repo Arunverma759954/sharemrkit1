@@ -9,7 +9,7 @@ export default function SharesMCX() {
     <>
       {/* ================= HERO / BANNER ================= */}
       <section
-        className="relative h-[55vh] flex items-center bg-cover bg-center"
+        className="relative  h-[55vh] flex items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/banner/b1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/70" />
@@ -65,7 +65,7 @@ export default function SharesMCX() {
 
           {/* Section 1 */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-3">
+            <h2 className="text-2xl text-black font-semibold mb-3">
               1. Professional Equity Management
             </h2>
             <p className="font-medium text-gray-700 mb-4">
@@ -85,7 +85,7 @@ export default function SharesMCX() {
 
           {/* Section 2 */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-3">
+            <h2 className="text-2xl text-black font-semibold mb-3">
               2. MCX Option Selling (The "Margin-Max" Engine)
             </h2>
 
@@ -107,7 +107,7 @@ export default function SharesMCX() {
 
           {/* Protection Section */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <h2 className="text-2xl text-black font-semibold mb-4 flex items-center gap-2">
               <ShieldCheck className="text-blue-600" />
               The 10% Capital Protection Floor
             </h2>
@@ -122,13 +122,13 @@ export default function SharesMCX() {
 
           {/* Comparison Table */}
           <div className="bg-white rounded-xl shadow p-8">
-            <h2 className="text-2xl font-semibold mb-6">
+            <h2 className="text-2xl text-black font-semibold mb-6">
               Strategic Advantage: Why Equity + MCX?
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full border">
-                <thead className="bg-gray-100">
+              <table className="w-full border text-black">
+                <thead className="bg-gray-100 text-black">
                   <tr>
                     <th className="p-3 border">Feature</th>
                     <th className="p-3 border">Standard Managed Equity</th>

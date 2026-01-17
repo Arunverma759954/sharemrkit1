@@ -69,11 +69,11 @@ export default function ProfessionalEquityNiftyYield() {
 
           {/* ================= DUAL ENGINE STRATEGY ================= */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-6">
+            <h2 className="text-2xl text-black font-semibold mb-6">
               2. The Dual-Engine Strategy
             </h2>
 
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl text-black font-semibold mb-2">
               Engine 1: Professional Equity Management
             </h3>
 
@@ -93,7 +93,7 @@ export default function ProfessionalEquityNiftyYield() {
               </li>
             </ul>
 
-            <h3 className="text-xl font-semibold mb-2">
+            <h3 className="text-xl text-black font-semibold mb-2">
               Engine 2: Nifty Algo "Yield Booster"
             </h3>
 
@@ -117,7 +117,7 @@ export default function ProfessionalEquityNiftyYield() {
 
           {/* ================= RISK PROTECTION ================= */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <h2 className="text-2xl font-semibold text-black mb-4 flex items-center gap-2">
               <ShieldCheck className="text-blue-600" />
               3. Institutional-Grade Risk Protection
             </h2>
@@ -145,12 +145,12 @@ export default function ProfessionalEquityNiftyYield() {
 
           {/* ================= COMPARISON TABLE ================= */}
           <div className="bg-white rounded-xl shadow p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-6">
+            <h2 className="text-2xl text-black font-semibold mb-6">
               4. Performance Comparison
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full border">
+              <table className="w-full border text-black">
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="p-3 border">Feature</th>
@@ -198,7 +198,7 @@ export default function ProfessionalEquityNiftyYield() {
 
           {/* ================= ONBOARDING ================= */}
           <div className="bg-white rounded-xl shadow p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-4">
+            <h2 className="text-2xl text-black font-semibold mb-4">
               5. The Onboarding Process
             </h2>
 

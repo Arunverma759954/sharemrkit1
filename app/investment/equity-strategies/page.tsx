@@ -61,7 +61,7 @@ export default function EquityStrategiesPage() {
               />
 
               <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl text-black font-semibold mb-4">
                   Shares + MCX
                 </h3>
 
@@ -90,7 +90,7 @@ export default function EquityStrategiesPage() {
               />
 
               <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl text-black font-semibold mb-4">
                   Shares + Nifty
                 </h3>
 

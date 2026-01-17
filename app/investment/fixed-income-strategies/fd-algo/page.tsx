@@ -72,7 +72,7 @@ export default function FDAlgoPage() {
 
           {/* Pillar 1 */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-3 flex items-center gap-2">
+            <h2 className="text-2xl font-semibold text-black mb-3 flex items-center gap-2">
               <Landmark className="text-[#7ED321]" />
               Pillar 1: Bank Fixed Deposit (Core Asset)
             </h2>
@@ -102,7 +102,7 @@ export default function FDAlgoPage() {
 
           {/* Pillar 2 */}
           <div className="bg-white rounded-xl shadow p-8 mb-10">
-            <h2 className="text-2xl font-semibold mb-3 flex items-center gap-2">
+            <h2 className="text-2xl  text-black font-semibold mb-3 flex items-center gap-2">
               <TrendingUp className="text-[#7ED321]" />
               Pillar 2: Nifty Algo Booster (Yield Engine)
             </h2>
@@ -132,7 +132,7 @@ export default function FDAlgoPage() {
 
           {/* Expected Performance */}
           <div className="bg-green-50 border border-green-200 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <h2 className="text-2xl font-semibold text-black mb-4 flex items-center gap-2">
               <ShieldCheck className="text-green-600" />
               Expected Performance: 14% – 15% CAGR
             </h2>
@@ -146,12 +146,12 @@ export default function FDAlgoPage() {
 
           {/* Comparison Table */}
           <div className="bg-white rounded-xl shadow p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-6">
+            <h2 className="text-2xl text-black font-semibold mb-6">
               FD vs FD + Algo Strategy
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full border">
+              <table className="w-full border text-black">
                 <thead className="bg-gray-100">
                   <tr>
                     <th className="p-3 border">Feature</th>
@@ -201,7 +201,7 @@ export default function FDAlgoPage() {
 
           {/* Risk Shield */}
           <div className="bg-blue-50 border border-blue-200 rounded-xl p-8 mb-12">
-            <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+            <h2 className="text-2xl text-black font-semibold mb-4 flex items-center gap-2">
               <Lock className="text-blue-600" />
               Non-Negotiable Risk Shield
             </h2>
@@ -220,7 +220,7 @@ export default function FDAlgoPage() {
 
           {/* Execution Steps */}
           <div className="bg-white rounded-xl shadow p-8">
-            <h2 className="text-2xl font-semibold mb-6">
+            <h2 className="text-2xl text-black font-semibold mb-6">
               How We Execute This Successfully
             </h2>
 

@@ -149,7 +149,7 @@ export default function InvestmentClient() {
         />
 
         <div className="p-8">
-          <h3 className="text-2xl font-semibold mb-4">
+          <h3 className="text-2xl text-black font-semibold mb-4">
             Strategic Equity Growth
           </h3>
 
@@ -185,7 +185,7 @@ export default function InvestmentClient() {
         />
 
         <div className="p-8">
-          <h3 className="text-2xl font-semibold mb-4">
+          <h3 className="text-2xl text-black font-semibold mb-4">
             Fixed Income Strategies
           </h3>
 

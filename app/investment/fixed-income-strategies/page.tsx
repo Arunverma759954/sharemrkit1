@@ -62,7 +62,7 @@ export default function FixedIncomeStrategiesPage() {
               />
 
               <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl text-black font-semibold mb-4">
                   Bonds + Algo
                 </h3>
 
@@ -91,7 +91,7 @@ export default function FixedIncomeStrategiesPage() {
               />
 
               <div className="p-8">
-                <h3 className="text-2xl font-semibold mb-4">
+                <h3 className="text-2xl  text-black font-semibold mb-4">
                   FD + Algo
                 </h3>
 
