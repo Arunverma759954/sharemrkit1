@@ -124,6 +124,96 @@ export default function InvestmentClient() {
         </div>
       </section>
 
+      {/* ================= STRATEGIES ================= */}
+<section className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="md:text-center mb-14">
+      <h2 className="text-3xl md:text-4xl font-bold text-black">
+        Our <span className="text-[#7ED321]">Investment Strategies</span>
+      </h2>
+      <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
+        Intelligent, automated and SEBI-compliant strategies designed for
+        long-term wealth creation.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-10">
+      {/* Equity Strategy */}
+      <div className="bg-gray-50 rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+        <Image
+          src="/investment/Strategic.jpg"
+          alt="Equity Strategy"
+          width={600}
+          height={400}
+          className="w-full"
+        />
+
+        <div className="p-8">
+          <h3 className="text-2xl font-semibold mb-4">
+            Strategic Equity Growth
+          </h3>
+
+          <p className="text-gray-600 mb-6">
+            Your capital works twice — once in equities for long-term growth and
+            once in Nifty / MCX options for monthly income.
+          </p>
+
+          <ul className="text-gray-600 mb-6 space-y-2">
+            <li>✔ 100% SEBI Compliant Infrastructure</li>
+            <li>✔ Fully Automated Zero-Effort Investing</li>
+            <li>✔ Real-Time Transparency</li>
+            <li>✔ Professional Portfolio Management</li>
+          </ul>
+
+          <Link
+            href="/investment/equity-strategies"
+            className="inline-block bg-[#7ED321] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#6ac11c]"
+          >
+            Explore Equity Strategies →
+          </Link>
+        </div>
+      </div>
+
+      {/* Fixed Income Strategy */}
+      <div className="bg-gray-50 rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+        <Image
+          src="/investment/Fixed.jpg"
+          alt="Fixed Income Strategy"
+          width={600}
+          height={400}
+          className="w-full"
+        />
+
+        <div className="p-8">
+          <h3 className="text-2xl font-semibold mb-4">
+            Fixed Income Strategies
+          </h3>
+
+          <p className="text-gray-600 mb-6">
+            Capital protection using High-Rated Bonds & FDs combined with
+            automated option income.
+          </p>
+
+          <ul className="text-gray-600 mb-6 space-y-2">
+            <li>✔ 100% SEBI Regulated Infrastructure</li>
+            <li>✔ Automated Option Trading</li>
+            <li>✔ Capital Safety Focus</li>
+            <li>✔ Professional Trade Management</li>
+          </ul>
+
+          <Link
+            href="/investment/fixed-income-strategies"
+            className="inline-block bg-[#7ED321] text-black px-6 py-3 rounded-full font-semibold hover:bg-[#6ac11c]"
+          >
+            Explore Fixed Income →
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       {/* ================= CTA ================= */}
       <section className="py-20 bg-[#0B1C2D] text-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
