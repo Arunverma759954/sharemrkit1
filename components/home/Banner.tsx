@@ -59,18 +59,19 @@ export default function Banner() {
               </p>
 
               <div className="mt-10 flex gap-4 flex-wrap">
-                <Link
-                  href="/demo"
-                  className="bg-[#2DB7F5] hover:bg-[#1aa3e8] px-8 py-3 rounded-full font-semibold"
-                >
-                  Book Free Demo
-                </Link>
-                <Link
-                  href="/contact"
-                  className="bg-[#7ED321] hover:bg-[#6ac11c] px-8 py-3 rounded-full font-semibold"
-                >
-                  Enquire Now
-                </Link>
+               <Link
+    href="/"
+    className="bg-[#2DB7F5] hover:bg-[#1aa3e8] px-8 py-3 rounded-full font-semibold"
+  >
+    Training
+  </Link>
+
+  <Link
+    href="/investment"
+    className="bg-[#7ED321] hover:bg-[#6ac11c] px-8 py-3 rounded-full font-semibold"
+  >
+    Investment
+  </Link>
               </div>
             </div>
           </div>
