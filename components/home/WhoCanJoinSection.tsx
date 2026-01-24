@@ -20,10 +20,10 @@ export default function WhoCanJoinSection() {
           {list.map((item, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition"
+              className="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition flex items-start gap-3"
             >
-              <span className="text-[#7ED321] font-bold text-xl">✔</span>
-              <p className="mt-3 text-gray-700">{item}</p>
+              <span className="text-[#7ED321] font-bold text-xl mt-1">✔</span>
+              <p className="text-gray-700">{item}</p>
             </div>
           ))}
         </div>

@@ -6,7 +6,7 @@ const courses = [
   {
     title: "Stock Market Trading Courses",
     subtitle: "Stock Market Trading Courses in Ghaziabad & Delhi NCR",
-    img: "/services/s3.webp",
+    img: "/services/s7.png",
     points: [
       "Stock market course for beginners in Ghaziabad",
       "Share market trading course with live market practice",

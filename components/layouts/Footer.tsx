@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { Phone, MessageCircle, Instagram, Facebook, Youtube } from "lucide-react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -30,7 +30,7 @@ export default function Footer() {
             {/* 🔗 Social Icons */}
             <div className="flex items-center gap-4 mt-5">
               <a
-                href="https://www.instagram.com/sharemarketskillsacademy?igsh=MWZ4enk5ZjZwdWN0cw%3D%3D&utm_source=qr"
+                href="https://www.instagram.com/sharemarketskillsacademy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-pink-500 transition"
@@ -38,8 +38,6 @@ export default function Footer() {
                 <Instagram size={22} />
               </a>
 
-              {/* Optional future icons */}
-                {/* Facebook */}
               <a
                 href="https://www.facebook.com/Sharemarketskills"
                 target="_blank"
@@ -59,10 +57,41 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li className="hover:text-green-400 cursor-pointer">About Us</li>
-              <li className="hover:text-green-400 cursor-pointer">Courses</li>
-              <li className="hover:text-green-400 cursor-pointer">Blogs</li>
-              <li className="hover:text-green-400 cursor-pointer">Contact</li>
+              <li>
+                <Link href="/" className="hover:text-green-400 transition">
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-green-400 transition">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/gallery" className="hover:text-green-400 transition">
+                  Gallery
+                </Link>
+              </li>
+              <li>
+                <Link href="/courses" className="hover:text-green-400 transition">
+                  Courses
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-green-400 transition">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/blogs" className="hover:text-green-400 transition">
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-green-400 transition">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -70,45 +99,76 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-4">Services</h4>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li>Trading Courses</li>
-              <li>Algo Trading</li>
-              <li>Mutual Funds</li>
-              <li>Investment Guidance</li>
+              <li>
+                <Link href="/services" className="hover:text-green-400 transition">
+                  Mutual Fund
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-green-400 transition">
+                  Bonds
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-green-400 transition">
+                  Fixed Deposit
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-green-400 transition">
+                  Insurance
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-green-400 transition">
+                  Algo Trading
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* 4️⃣ Address */}
+          {/* 4️⃣ Address + Map */}
           <div>
             <h4 className="text-white font-semibold mb-4">Address</h4>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              ShareMrKit Academy<br />
-              Sector 62, Noida<br />
-              Uttar Pradesh, India<br />
+
+            <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              41 Vishnu Enclave,
+              Main Hapur Road,
+              Opp. Govindpuram, Ghaziabad<br />
               📞 +91 8460188483
             </p>
-          </div>
 
+            {/* 🗺️ Small Google Map */}
+            <div className="w-full h-40 rounded-lg overflow-hidden border border-gray-800">
+              <iframe
+                src="https://www.google.com/maps?q=41%20Vishnu%20Enclave,%20Main%20Hapur%20Road,%20Ghaziabad&output=embed"
+                className="w-full h-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+          </div>
         </div>
 
+        {/* Footer Bottom */}
         <div className="text-center text-gray-500 text-sm py-4 border-t border-gray-800">
           © {new Date().getFullYear()} ShareMrKit. All rights reserved.
         </div>
       </footer>
 
       {/* ============ FLOATING WHATSAPP (DESKTOP ONLY) ============ */}
-     <a
-  href="https://wa.me/918460188483"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="hidden md:flex fixed bottom-6 right-6 z-[999]
-             bg-green-500 hover:bg-green-600
-             w-14 h-14 rounded-full
-             items-center justify-center
-             shadow-xl transition"
->
-  <FontAwesomeIcon icon={faWhatsapp} className="text-white text-3xl" />
-</a>
-
+      <a
+        href="https://wa.me/918460188483"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:flex fixed bottom-6 right-6 z-[999]
+                   bg-green-500 hover:bg-green-600
+                   w-14 h-14 rounded-full
+                   items-center justify-center
+                   shadow-xl transition"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} className="text-white text-3xl" />
+      </a>
 
       {/* ============ MOBILE FIXED BAR ============ */}
       <div className="fixed bottom-0 left-0 right-0 z-50 bg-black border-t border-gray-800

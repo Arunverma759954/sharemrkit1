@@ -18,6 +18,7 @@ import WhoCanJoinSection from "@/components/home/WhoCanJoinSection";
 import LocationTrainingSection from "@/components/home/LocationTrainingSection";
 import HowTrainingWorksSection from "@/components/home/HowTrainingWorksSection";
 import CallToActionSection from "@/components/home/CallToActionSection";
+import ClientVideosSection from "@/components/home/ClientVideosSection";
 
 const ScrollVideoSection = dynamic(
   () => import("@/components/home/ScrollVideoSection"),
@@ -41,6 +42,7 @@ export default function HomePage() {
       <BenefitsSection />
       <ExperienceSection />
       <HowTrainingWorksSection />
+      <ClientVideosSection />
       <BlogSection />
       <TeamSection />
       <ScrollVideoSection />
