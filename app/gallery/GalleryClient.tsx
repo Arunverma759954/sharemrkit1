@@ -7,12 +7,12 @@ import { X } from "lucide-react"
 import { useState } from "react"
 
 const galleryImages = [
-  "/gallery/g1.jpg",
-  "/gallery/g2.jpg",
-  "/gallery/g3.jpg",
-  "/gallery/g4.webp",
-  "/gallery/g5.webp",
-  "/gallery/g6.webp",
+  "/Gallery/g1.jpg",
+  "/Gallery/g2.jpg",
+  "/Gallery/g3.jpg",
+  "/Gallery/g4.webp",
+  "/Gallery/g5.webp",
+  "/Gallery/g6.webp",
 ]
 
 export default function GalleryClient() {
