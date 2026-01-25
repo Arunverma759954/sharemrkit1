@@ -45,7 +45,7 @@ export default function HomePage() {
       <ClientVideosSection />
       <BlogSection />
       <TeamSection />
-      <ScrollVideoSection />
+      {/* <ScrollVideoSection /> */}
       <TestimonialsSection />
       <FAQSection />
       <CallToActionSection />
