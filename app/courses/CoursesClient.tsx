@@ -9,7 +9,7 @@ const courses = [
   {
     title: "Stock Market Trading Courses",
     location: "Ghaziabad & Delhi NCR",
-    image: "/services/s1.jpg",
+    image: "/cources/stock-market-course.jpeg",
     points: [
       "Stock market course for beginners in Ghaziabad",
       "Share market trading course with live market practice",
@@ -23,7 +23,7 @@ const courses = [
   {
     title: "Cryptocurrency & Crypto Trading",
     location: "Ghaziabad & Delhi NCR",
-    image: "/services/s2.png",
+    image: "/cources/cryptocurrency-course.jpeg",
     points: [
       "Crypto trading course for beginners in Ghaziabad",
       "Cryptocurrency trading course in Delhi NCR",
@@ -37,7 +37,7 @@ const courses = [
   {
     title: "Investing & Wealth Building",
     location: "Long-Term Financial Growth",
-    image: "/services/s4.webp",
+    image: "/cources/investment-management-course.jpeg",
     points: [
       "How to invest in stock market for beginners in Ghaziabad",
       "Long-term investing strategies (Delhi NCR)",

@@ -8,27 +8,27 @@ const services = [
   {
     title: "Mutual Fund",
     desc: "Professionally managed mutual funds to grow your wealth safely.",
-    img: "/services/s4.webp",
+    img: "/services/mutual-fund.jpeg",
   },
   {
     title: "Bonds",
     desc: "Low-risk bond investments with fixed and stable returns.",
-    img: "/services/s5.jpeg",
+    img: "/services/bonds.jpeg",
   },
   {
     title: "Fixed Deposit",
     desc: "Guaranteed returns through secure and high-interest fixed deposits.",
-    img: "/services/s6.png",
+    img: "/services/fixed-deposit.jpeg",
   },
   {
     title: "Insurance",
     desc: "Complete insurance solutions for life, health, and asset protection.",
-    img: "/services/s2.png",
+    img: "/services/insurance.jpeg",
   },
   {
     title: "Algo Trading",
     desc: "Smart algorithm-based trading for faster and data-driven decisions.",
-    img: "/services/s1.jpg",
+    img: "/services/algo-trading.jpeg",
   },
 ]
 
@@ -97,7 +97,7 @@ export default function ServicesClient() {
                   src={item.img}
                   alt={item.title}
                   fill
-                  className="object-cover hover:scale-110 transition duration-300"
+                  className=" object-top hover:scale-110 transition duration-300"
                 />
               </div>
 

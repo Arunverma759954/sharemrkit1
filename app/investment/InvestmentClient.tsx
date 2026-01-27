@@ -141,7 +141,7 @@ export default function InvestmentClient() {
       {/* Equity Strategy */}
       <div className="bg-gray-50 rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
         <Image
-          src="/investment/Strategic.jpg"
+          src="/investment/equity.jpeg"
           alt="Equity Strategy"
           width={600}
           height={400}
@@ -177,7 +177,7 @@ export default function InvestmentClient() {
       {/* Fixed Income Strategy */}
       <div className="bg-gray-50 rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
         <Image
-          src="/investment/Fixed.jpg"
+          src="/investment/fixed.jpeg"
           alt="Fixed Income Strategy"
           width={600}
           height={400}

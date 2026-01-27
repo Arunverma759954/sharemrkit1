@@ -6,7 +6,7 @@ const courses = [
   {
     title: "Stock Market Trading Courses",
     subtitle: "Stock Market Trading Courses in Ghaziabad & Delhi NCR",
-    img: "/services/s7.png",
+    img: "/cources/stock-market-course.jpeg",
     points: [
       "Stock market course for beginners in Ghaziabad",
       "Share market trading course with live market practice",
@@ -20,7 +20,7 @@ const courses = [
   {
     title: "Cryptocurrency & Crypto Trading",
     subtitle: "Cryptocurrency & Crypto Trading Courses in Ghaziabad & Delhi NCR",
-    img: "/services/s1.jpg",
+    img: "/cources/cryptocurrency-course.jpeg",
     points: [
       "Crypto trading course for beginners in Ghaziabad",
       "Cryptocurrency trading course in Delhi NCR",
@@ -34,7 +34,7 @@ const courses = [
   {
     title: "Investing & Wealth Building",
     subtitle: "Investing & Wealth-Building Courses",
-    img: "/services/s2.png",
+    img: "/cources/investment-management-course.jpeg",
     points: [
       "How to invest in stock market for beginners in Ghaziabad",
       "Long-term investing strategies Delhi NCR",
@@ -75,7 +75,7 @@ export default function CoursesSection() {
                   src={course.img}
                   alt={course.title}
                   fill
-                  className="object-cover"
+                  className=" object-top"
                 />
               </div>
 
