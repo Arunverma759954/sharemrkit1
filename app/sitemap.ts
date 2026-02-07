@@ -3,7 +3,7 @@ import { MetadataRoute } from 'next'
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.sharemarketskills.in' // 🔁 change to your real domain
 
-  return [
+  return [ 
     {
       url: baseUrl,
       lastModified: new Date(),
