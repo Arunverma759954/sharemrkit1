@@ -1,15 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Plus, Minus } from "lucide-react";
-
-export const metadata = {
-  title: "Top-Rated Share Market Course in Ghaziabad | SMSA Trading Academy",
-  description:
-    "Join SMSA, the leading trading academy in Ghaziabad, for expert-led share market courses. Master technical analysis, options trading, and investment strategies with practical, live-market training designed for beginners and pros alike.",
-};
 
 const faqs = [
   {
@@ -48,39 +41,93 @@ export default function ServicesDetailPage() {
 
   return (
     <div className="bg-white text-black">
+
       {/* ================= BANNER ================= */}
       <section
         className="relative h-[55vh] flex items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/banner/b1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/70" />
-
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
           <p className="text-sm text-gray-300 mb-3">
             <Link href="/" className="hover:text-[#7ED321]">Home</Link> / Services
           </p>
-
           <h1 className="text-4xl md:text-6xl font-bold">
             Best Share Market Course in <span className="text-[#7ED321]">Ghaziabad</span>
           </h1>
-
           <p className="mt-5 max-w-2xl text-gray-200">
             Reliable financial services designed for growth, stability & security.
           </p>
         </div>
       </section>
 
-      {/* ================= INTRO ================= */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Smart Financial <span className="text-[#7ED321]">Solutions</span>
-          </h2>
+      {/* ================= INTRODUCTION CONTENT ================= */}
+      <section className="py-20">
+        <div className="max-w-5xl mx-auto px-6 space-y-10 text-gray-700 leading-relaxed">
 
-          <p className="text-gray-600 text-lg leading-relaxed">
-            We offer a complete range of investment and financial services tailored to help you build long-term wealth with confidence.
-            Our expert-driven approach focuses on safety, consistency, and informed decision-making.
-          </p>
+          <div className="space-y-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-black">Introduction</h2>
+            <p>
+              The world of finance is evolving with the latest trends and fluctuations due to the rise and fall in the current market. So in 2026, understanding the market shares and values before investing money in the share market is always the wiser move.
+            </p>
+            <p>
+              That’s why you need a platform that offers a comprehensive share market course in Ghaziabad. Users should understand why ShareMarket Skills Academy (SMSA Ghaziabad) is the right choice to start your career in finance or to seek a secondary income.
+            </p>
+            <p>
+              Time to focus on the structured approach to get next-level guidance and never feel lost in a sea full of financial turbulence.
+            </p>
+          </div>
+
+          <div className="space-y-5">
+            <h2 className="text-3xl font-bold text-black">Get Comprehensive Insights on Our Stock Market Course Ghaziabad</h2>
+            <p>
+              The share market classes in Ghaziabad are worth taking when you find the right tutor and tutorial; otherwise, it’s just a waste of time.
+            </p>
+            <p>
+              ShareMarket Skills Academy is the only reliable trading institute in Ghaziabad that can help you become a professional investor after course completion.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-black">1. Professional Stock Market Training for Beginners</h3>
+            <p>
+              Getting a proper trading course in Ghaziabad at SMSA is easy, as we design everything beginner-friendly. Our students come from diverse backgrounds with the enthusiasm to achieve something unique in the share market.
+            </p>
+            <p>
+              We ensure you understand psychological barriers that often lead to early losses and take a slow, methodical approach so no student is left behind.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-black">2. Advanced Technical Analysis and Chart Reading</h3>
+            <p>
+              After completing the basics, we transition into advanced analysis — “Understanding the Language of the Markets.”
+            </p>
+            <p>
+              We focus on clean trading and practical chart reading so students learn to time entries and exits with precision.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <h3 className="text-2xl font-semibold text-black">3. Mastering Options Trading and Hedging Strategies</h3>
+            <p>
+              The year 2026 presents major opportunities in derivatives. We teach options as tools for consistent income, not gambling instruments.
+            </p>
+            <p>
+              We cover portfolio diversification, asset allocation, compounding, and risk-managed strategies.
+            </p>
+          </div>
+
+          <div className="space-y-5">
+            <h2 className="text-3xl font-bold text-black">Conclusion</h2>
+            <p>
+              By choosing our share market course in Ghaziabad, you gain lifetime support and guidance from the best trading academy in Ghaziabad.
+            </p>
+            <p>
+              Empower yourself with the skills to navigate the bulls and bears of 2026 and beyond. Join ShareMarket Skills Academy today!
+            </p>
+          </div>
+
         </div>
       </section>
 
@@ -93,37 +140,23 @@ export default function ServicesDetailPage() {
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Got questions? We’ve got answers. Everything you need to know before starting your trading journey.
-            </p>
           </div>
 
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden"
-              >
+              <div key={index} className="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex justify-between items-center text-left p-6"
                 >
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">
-                    {faq.question}
-                  </h3>
+                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">{faq.question}</h3>
                   <span className="text-green-500">
                     {activeIndex === index ? <Minus /> : <Plus />}
                   </span>
                 </button>
 
-                <div
-                  className={`px-6 overflow-hidden transition-all duration-300 ${
-                    activeIndex === index ? "max-h-40 pb-6" : "max-h-0"
-                  }`}
-                >
-                  <p className="text-gray-600 leading-relaxed">
-                    {faq.answer}
-                  </p>
+                <div className={`px-6 overflow-hidden transition-all duration-300 ${activeIndex === index ? "max-h-40 pb-6" : "max-h-0"}`}>
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
                 </div>
               </div>
             ))}
@@ -131,6 +164,7 @@ export default function ServicesDetailPage() {
 
         </div>
       </section>
+
     </div>
   );
 }
