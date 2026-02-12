@@ -235,31 +235,10 @@ export default function BlogClient() {
                 />
               </div>
 
-              <div className="p-6">
-                <p className="text-sm text-gray-500 mb-2">
-                  By ShareMarket Skills Academy | 23 March 2023 · 4 min read
-                </p>
-
-                <h3 className="text-xl font-semibold mb-3">
-                  {blog.title}
-                </h3>
-
-                <p className="text-gray-600 mb-4">{blog.desc}</p>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {blog.category.map((tag, i) => (
-                    <span
-                      key={i}
-                      className="text-xs bg-gray-100 px-3 py-1 rounded-full text-gray-600"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
+              <div className="p-6 flex items-center justify-center min-h-[120px]">
                 <Link
                   href={blog.slug}
-                  className="inline-flex items-center gap-2 text-[#7ED321] font-semibold hover:gap-3 transition"
+                  className="inline-flex items-center gap-2 text-[#7ED321] font-semibold hover:gap-3 transition border-b-2 border-[#7ED321] pb-1 hover:text-black hover:border-black"
                 >
                   Read More <ArrowRight size={18} />
                 </Link>
