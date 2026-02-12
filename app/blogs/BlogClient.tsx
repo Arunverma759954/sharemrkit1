@@ -1,24 +1,35 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 /* ================= BLOG DATA ================= */
-const blogs = [
+const allBlogs = [
   {
-    title: "Transforming Digital Solutions with Artificial Intelligence",
+    title: "Share Market Course in Ghaziabad – Start Your Trading Journey Today",
     desc:
-      "We delve into the profound impact that Artificial Intelligence (AI) is having on digital solutions across various industries.",
-    image: "/blogs/b1.jpg",
-    category: ["Artificial Intelligence", "Machine Learning", "Deep Learning"],
+      "Looking for the best share market course in Ghaziabad? Whether you are a student, working professional, or business owner, learning stock market trading can open the door to financial growth.",
+    image: "/blogs/share-market-course.png",
+    category: ["Share Market", "Trading", "Investment"],
+    slug: "/share-market-course-ghaziabad",
   },
   {
-    title: "The Art of Collaboration in Creative Agency Studio",
+    title: "Stock Market Training in Ghaziabad – Professional Trading Classes",
     desc:
-      "In this blog post, we explore the dynamics of collaboration within and between creative agencies.",
+      "Looking for the best stock market training in Ghaziabad to start your trading journey? Our professional share market training is designed for beginners.",
     image: "/blogs/b2.jpg",
-    category: ["creative", "agency", "product"],
+    category: ["Stock Market", "Training", "Education"],
+    slug: "/stock-market-training-ghaziabad",
+  },
+  {
+    title: "Share Market Training Near Vishnu Enclave – Professional Trading Classes",
+    desc:
+      "Are you searching for the best share market training near Vishnu Enclave? Our professional training program is designed to help you build strong knowledge.",
+    image: "/blogs/b3.jpeg",
+    category: ["Stock Market", "Training", "Vishnu Enclave"],
+    slug: "/share-market-training-near-vishnu-enclave",
   },
   {
     title: "Enhancing Creativity with Machine Learning",
@@ -26,31 +37,126 @@ const blogs = [
       "Explore how AI is revolutionizing the design process, from generating innovative concepts to automating.",
     image: "/blogs/blog-thum-03.png",
     category: ["Artificial Intelligence", "Machine Learning", "Deep Learning"],
+    slug: "/blogs/details",
   },
   {
-    title: "The Art of Collaboration in Creative Agency Studio",
+    title: "Stock Market Course Near Me in Ghaziabad – Learn Trading",
     desc:
-      "In this blog post, we explore the dynamics of collaboration within and between creative agencies.",
+      "Are you searching online for the best stock market course near me in Ghaziabad? Our professional share market course is specially designed for beginners.",
     image: "/blogs/blog-thum-4.png",
-    category: ["creative", "product", "digital"],
+    category: ["Stock Market", "Trading", "Ghaziabad"],
+    slug: "/stock-market-course-near-me-ghaziabad",
   },
   {
-    title: "A Blueprint for Innovation in Product Development",
+    title: "Best Share Market Academy in Ghaziabad – Professional Training",
     desc:
-      "Explore how AI is revolutionizing the design process, from generating innovative concepts to automating.",
+      "Looking for the best share market academy in Ghaziabad? Our academy offers practical and result-oriented stock market training.",
     image: "/blogs/b5.jpg",
-    category: ["Artificial Intelligence", "Machine Learning", "Deep Learning"],
+    category: ["Stock Market", "Academy", "Ghaziabad"],
+    slug: "/best-share-market-academy-in-ghaziabad",
   },
   {
-    title: "Product Management in the Digital Age: Complexity and Uncertainty",
+    title: "Intraday Trading Course in Ghaziabad – Learn Day Trading",
     desc:
-      "In this blog post, we explore the dynamics of collaboration within and between creative agencies.",
+      "Are you searching for the best intraday trading course in Ghaziabad? Our professional day trading course is specially designed for beginners.",
     image: "/blogs/blog-thum-6.png",
-    category: ["creative", "product", "digital"],
+    category: ["Intraday", "Trading", "Ghaziabad"],
+    slug: "/intraday-trading-course-ghaziabad",
+  },
+  {
+    title: "Technical Analysis Course in Ghaziabad – Master Chart Reading",
+    desc:
+      "Are you searching for the best technical analysis course in Ghaziabad? Our professional chart reading course is specially designed for beginners.",
+    image: "/blogs/b4.jpeg",
+    category: ["Technical Analysis", "Trading", "Charts"],
+    slug: "/technical-analysis-course-ghaziabad",
+  },
+  {
+    title: "Stock Market Course for Beginners in Ghaziabad – Start from Basics",
+    desc:
+      "Are you new to the stock market and searching for the best stock market course for beginners in Ghaziabad? Our structured course is specially designed for students and job holders.",
+    image: "/blogs/blog-thum-03.png",
+    category: ["Stock Market", "Beginners", "Ghaziabad"],
+    slug: "/beginner-stock-market-course-ghaziabad",
+  },
+  {
+    title: "Online Stock Trading Classes in Ghaziabad – Learn Trading from Home",
+    desc:
+      "Are you searching for the best online stock trading classes in Ghaziabad? Learn professional trading skills from home with our live, interactive training program.",
+    image: "/blogs/b1.jpg",
+    category: ["Online", "Stock Market", "Ghaziabad"],
+    slug: "/online-stock-trading-classes-ghaziabad",
+  },
+  {
+    title: "Equity Trading Coaching in Ghaziabad – Professional Equity Market Training",
+    desc:
+      "Are you looking for the best equity trading coaching in Ghaziabad? Learn how the equity market works with practical, strategy-based training.",
+    image: "/blogs/b2.jpg",
+    category: ["Equity", "Trading", "Ghaziabad"],
+    slug: "/equity-trading-coaching-ghaziabad",
+  },
+  {
+    title: "Financial Education Center in Ghaziabad – Professional Investment & Finance Training",
+    desc:
+      "Looking for a trusted financial education center in Ghaziabad? Build strong knowledge of finance, stock market, and investments with our structured programs.",
+    image: "/blogs/b3.jpeg",
+    category: ["Financial Education", "Investment", "Ghaziabad"],
+    slug: "/financial-education-center-ghaziabad",
+  },
+  {
+    title: "Stock Market Course After 12th in Ghaziabad – Start Your Trading Career Early",
+    desc:
+      "Have you completed your 12th and looking for a career-oriented course? Start early with our stock market course after 12th in Ghaziabad.",
+    image: "/blogs/b4.jpeg",
+    category: ["Students", "Stock Market", "Ghaziabad"],
+    slug: "/stock-market-course-after-12th-ghaziabad",
+  },
+  {
+    title: "Stock Market Course for Working Professionals in Ghaziabad – Learn Part-Time Trading",
+    desc:
+      "Are you a job holder looking to create an additional source of income? Learn part-time trading with our stock market course for working professionals in Ghaziabad.",
+    image: "/blogs/b5.jpg",
+    category: ["Working Professionals", "Part-Time Trading", "Ghaziabad"],
+    slug: "/stock-market-course-for-working-professionals-ghaziabad",
+  },
+  {
+    title: "Share Market Training with Live Trading in Ghaziabad – Practical Market Learning",
+    desc:
+      "Are you searching for the best share market training with live trading in Ghaziabad? Gain real-time market experience with our live trading sessions.",
+    image: "/blogs/blog-thum-6.png",
+    category: ["Live Trading", "Share Market", "Ghaziabad"],
+    slug: "/share-market-training-with-live-trading-ghaziabad",
+  },
+  {
+    title: "How to Start Trading in Ghaziabad – Step-by-Step Beginner Guide",
+    desc:
+      "New to markets? This trading guide for Ghaziabad explains how to start trading, open accounts, learn stock market basics, and manage risk step by step.",
+    image: "/blogs/share-market-course.png",
+    category: ["Trading Guide", "Stock Market Basics", "Ghaziabad"],
+    slug: "/how-to-start-trading-in-ghaziabad",
   },
 ];
 
 export default function BlogClient() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const blogsPerPage = 6;
+  
+  // Calculate indices
+  const indexOfLastBlog = currentPage * blogsPerPage;
+  const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
+  const currentBlogs = allBlogs.slice(indexOfFirstBlog, indexOfLastBlog);
+  const totalPages = Math.ceil(allBlogs.length / blogsPerPage);
+
+  const handlePageChange = (page: number | string) => {
+     if (typeof page === 'number') {
+        setCurrentPage(page);
+     } else if (page === 'Previous' && currentPage > 1) {
+        setCurrentPage(currentPage - 1);
+     } else if (page === 'Next' && currentPage < totalPages) {
+        setCurrentPage(currentPage + 1);
+     }
+  };
+
   return (
     <>
       {/* ================= HERO ================= */}
@@ -115,7 +221,7 @@ export default function BlogClient() {
       {/* ================= BLOG GRID ================= */}
       <section className="py-14 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-black grid grid-cols-1 sm:grid-cols-2 gap-10">
-          {blogs.map((blog, index) => (
+            {currentBlogs.map((blog, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
@@ -152,7 +258,7 @@ export default function BlogClient() {
                 </div>
 
                 <Link
-                  href="/blogs/details"
+                  href={blog.slug}
                   className="inline-flex items-center gap-2 text-[#7ED321] font-semibold hover:gap-3 transition"
                 >
                   Read More <ArrowRight size={18} />
@@ -166,11 +272,22 @@ export default function BlogClient() {
       {/* ================= PAGINATION ================= */}
       <section className="pb-20 bg-gray-50">
         <div className="flex justify-center gap-3">
-          {["Previous", "1", "2", "3", "Next"].map((p, i) => (
-            <button
-              key={i}
+          <button
+              onClick={() => handlePageChange('Previous')}
+              disabled={currentPage === 1}
               className={`px-4 py-2 rounded-md border text-sm font-medium ${
-                p === "1"
+                currentPage === 1 ? "bg-gray-200 text-gray-400 cursor-not-allowed" : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
+              } transition`}
+          >
+              Previous
+          </button>
+          
+          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
+            <button
+              key={p}
+              onClick={() => handlePageChange(p)}
+              className={`px-4 py-2 rounded-md border text-sm font-medium ${
+                p === currentPage
                   ? "bg-[#7ED321] text-black"
                   : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
               } transition`}
@@ -178,6 +295,16 @@ export default function BlogClient() {
               {p}
             </button>
           ))}
+
+          <button
+              onClick={() => handlePageChange('Next')}
+              disabled={currentPage === totalPages}
+              className={`px-4 py-2 rounded-md border text-sm font-medium ${
+                currentPage === totalPages ? "bg-gray-200 text-gray-400 cursor-not-allowed" : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
+              } transition`}
+          >
+              Next
+          </button>
         </div>
       </section>
     </>

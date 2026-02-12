@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // Swiper
@@ -12,35 +13,116 @@ import "swiper/css/navigation";
 
 const blogs = [
      {
-    title: "Market Volatility Explained",
-    category: "Dividend Stocks",
-    desc: "Understand market volatility and how to trade smartly.",
-    img: "/blogs/b1.jpg",
+    title: "Share Market Course in Ghaziabad",
+    category: "Stock Market",
+    desc: "Start your trading journey with the best share market course in Ghaziabad.",
+    img: "/blogs/share-market-course.png",
+    slug: "/share-market-course-ghaziabad",
   },
   {
-    title: "Options Trading Business?",
-    category: "Dividend Stocks",
-    desc: "Learn strategies for options trading and maximize your returns effectively.",
+    title: "Stock Market Training in Ghaziabad",
+    category: "Training",
+    desc: "Professional trading classes for beginners and advanced traders.",
     img: "/blogs/b2.jpg",
+    slug: "/stock-market-training-ghaziabad",
   },
   {
-    title: "Top 5 Stocks to Buy",
-    category: "Non-Dividend Stocks",
-    desc: "We analyze the top 5 stocks for long-term growth in 2026.",
+    title: "Share Market Training Near Vishnu Enclave",
+    category: "Stock Market",
+    desc: "Professional trading classes near Vishnu Enclave designed for beginners.",
     img: "/blogs/b3.jpeg",
-  },
- 
-  {
-    title: "Beginner's Guide to Investing",
-    category: "ETF",
-    desc: "Step by step guide for new investors to enter the stock market.",
-    img: "/blogs/b4.jpeg",
+    slug: "/share-market-training-near-vishnu-enclave",
   },
   {
-    title: "Advanced Options Strategies",
-    category: "Options",
-    desc: "Learn advanced techniques to hedge and profit from options.",
+    title: "Stock Market Course Near Me in Ghaziabad",
+    category: "Stock Market",
+    desc: "Specially designed course for beginners, working professionals, and aspiring traders.",
+    img: "/blogs/blog-thum-4.png",
+    slug: "/stock-market-course-near-me-ghaziabad",
+  },
+  {
+    title: "Best Share Market Academy in Ghaziabad",
+    category: "Academy",
+    desc: "Join the top trading institute in Ghaziabad for practical stock market training.",
     img: "/blogs/b5.jpg",
+    slug: "/best-share-market-academy-in-ghaziabad",
+  },
+  {
+    title: "Intraday Trading Course in Ghaziabad",
+    category: "Intraday",
+    desc: "Learn day trading with live market practice and proven strategies.",
+    img: "/blogs/blog-thum-6.png",
+    slug: "/intraday-trading-course-ghaziabad",
+  },
+  {
+    title: "Options Trading Course in Ghaziabad",
+    category: "Options",
+    desc: "Master advanced options strategies with our professional course.",
+    img: "/blogs/b1.jpg",
+    slug: "/options-trading-course-ghaziabad",
+  },
+  {
+    title: "Stock Market Course for Beginners in Ghaziabad",
+    category: "Beginners",
+    desc: "Start your trading journey with the best beginner course in Ghaziabad.",
+    img: "/blogs/blog-thum-03.png",
+    slug: "/beginner-stock-market-course-ghaziabad",
+  },
+  {
+    title: "Technical Analysis Course in Ghaziabad",
+    category: "Technical Analysis",
+    desc: "Master chart reading and trading strategies with our expert-led course.",
+    img: "/blogs/b4.jpeg",
+    slug: "/technical-analysis-course-ghaziabad",
+  },
+  {
+    title: "Online Stock Trading Classes in Ghaziabad",
+    category: "Online",
+    desc: "Learn stock trading from home with live, interactive virtual classes.",
+    img: "/blogs/b1.jpg",
+    slug: "/online-stock-trading-classes-ghaziabad",
+  },
+  {
+    title: "Equity Trading Coaching in Ghaziabad",
+    category: "Equity",
+    desc: "Structured equity trading coaching with live market practice in Ghaziabad.",
+    img: "/blogs/b2.jpg",
+    slug: "/equity-trading-coaching-ghaziabad",
+  },
+  {
+    title: "Financial Education Center in Ghaziabad",
+    category: "Financial Education",
+    desc: "Learn finance, stock market, and investments at our financial education center in Ghaziabad.",
+    img: "/blogs/b3.jpeg",
+    slug: "/financial-education-center-ghaziabad",
+  },
+  {
+    title: "Stock Market Course After 12th in Ghaziabad",
+    category: "Students",
+    desc: "Career-oriented stock market course for students who have completed 12th.",
+    img: "/blogs/b4.jpeg",
+    slug: "/stock-market-course-after-12th-ghaziabad",
+  },
+  {
+    title: "Stock Market Course for Working Professionals in Ghaziabad",
+    category: "Working Professionals",
+    desc: "Learn part-time trading strategies designed for busy working professionals.",
+    img: "/blogs/b5.jpg",
+    slug: "/stock-market-course-for-working-professionals-ghaziabad",
+  },
+  {
+    title: "Share Market Training with Live Trading in Ghaziabad",
+    category: "Live Trading",
+    desc: "Get real-time market exposure with our share market live trading training in Ghaziabad.",
+    img: "/blogs/blog-thum-6.png",
+    slug: "/share-market-training-with-live-trading-ghaziabad",
+  },
+  {
+    title: "How to Start Trading in Ghaziabad",
+    category: "Trading Guide",
+    desc: "Beginner-friendly guide explaining how to start trading in Ghaziabad step by step.",
+    img: "/blogs/share-market-course.png",
+    slug: "/how-to-start-trading-in-ghaziabad",
   },
 ];
 
@@ -106,9 +188,15 @@ export default function BlogSection() {
                   </div>
 
                   <h3 className="text-xl font-bold text-gray-900 mb-2">
-                    {blog.title}
+                    <Link href={blog.slug} className="hover:text-[#7ED321] transition">
+                      {blog.title}
+                    </Link>
                   </h3>
-                  <p className="text-gray-600 text-sm">{blog.desc}</p>
+                  <p className="text-gray-600 text-sm mb-4">{blog.desc}</p>
+                  
+                  <Link href={blog.slug} className="text-[#7ED321] font-semibold text-sm hover:underline">
+                    Read More →
+                  </Link>
                 </div>
               </SwiperSlide>
             ))}

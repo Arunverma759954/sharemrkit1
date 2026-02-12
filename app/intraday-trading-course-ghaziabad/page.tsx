@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function ShareMarketCourseBlog() {
+export default function IntradayTradingCourseGhaziabad() {
   return (
     <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
@@ -20,8 +20,8 @@ export default function ShareMarketCourseBlog() {
             <ArrowLeft size={16} /> Back to Blogs
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            Share Market Course in <span className="text-[#7ED321]">Ghaziabad</span> <br/>
-            Start Your Trading Journey Today
+            Intraday Trading Course in <span className="text-[#7ED321]">Ghaziabad</span> <br/>
+            Learn Day Trading with Live Market Practice
           </h1>
         </div>
       </section>
@@ -32,20 +32,26 @@ export default function ShareMarketCourseBlog() {
           
           <div className="prose max-w-none">
             <p className="font-medium text-xl text-gray-800">
-              Looking for the best share market course in Ghaziabad? Whether you are a student, working professional, or business owner, learning stock market trading can open the door to financial growth and passive income opportunities. Our professional stock market course in Ghaziabad is designed to help beginners and advanced learners understand the market from basics to live trading strategies.
+              Are you searching for the best intraday trading course in Ghaziabad to start earning from daily market movements? Our professional day trading course in Ghaziabad is specially designed for beginners and working professionals who want to learn practical trading strategies and generate consistent income from the stock market.
+            </p>
+
+            <p className="mt-8">
+              Intraday trading requires proper strategy, discipline, and risk management. Without the right guidance, beginners often face losses. That’s why our intraday classes in Ghaziabad focus on live market learning, real-time chart analysis, and step-by-step strategy building.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
-              In this course, you will learn:
+              What You Will Learn in Our Intraday Course:
             </h2>
             <ul className="space-y-4 list-none pl-0">
               {[
-                "Basics of Stock Market & NSE/BSE",
-                "Technical Analysis & Chart Reading",
-                "Intraday & Swing Trading Strategies",
-                "Risk Management Techniques",
-                "Live Trading Practice",
-                "Long-term Investment Planning"
+                "Basics of Intraday Trading",
+                "How to Select Stocks for Day Trading",
+                "Chart Reading & Technical Analysis",
+                "Support & Resistance Strategy",
+                "Breakout & Momentum Trading Setup",
+                "Risk & Money Management Techniques",
+                "Stop Loss & Target Planning",
+                "Live Market Practice Sessions"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="text-[#7ED321] text-xl">✔</span>
@@ -55,23 +61,23 @@ export default function ShareMarketCourseBlog() {
             </ul>
 
             <p className="mt-8">
-              Our expert trainers provide step-by-step guidance so that you can confidently trade in the market. If you are searching for a practical trading course in Ghaziabad, this program focuses on real-time market exposure instead of just theory.
+              Our expert mentors provide practical exposure so you can understand how to trade confidently in real market conditions. We teach simple and effective strategies that are easy to follow even for beginners.
             </p>
 
             <p className="mt-6">
-              We also offer a specialized investment course in Ghaziabad for those who want to build long-term wealth through smart portfolio management. Learn how to select strong stocks, analyze company fundamentals, and create a profitable investment strategy.
+              This day trading course in Ghaziabad is suitable for students, job holders, and business owners who want to create an additional income source through short-term trading. Small batch sizes ensure personal attention and better learning experience.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
-              Why Choose Us?
+              Why Choose Our Intraday Classes in Ghaziabad?
             </h2>
             <ul className="grid sm:grid-cols-2 gap-4 list-none pl-0">
               {[
                 "Live Market Sessions",
-                "Practical Learning Approach",
-                "Small Batch Size",
-                "Personalized Mentorship",
-                "Affordable Fees"
+                "Practical Strategy-Based Learning",
+                "Beginner Friendly Training",
+                "Personal Mentorship Support",
+                "Affordable Course Fees"
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-[#7ED321] transition">
                   <span className="text-yellow-500 text-xl">⭐</span>
@@ -81,9 +87,12 @@ export default function ShareMarketCourseBlog() {
             </ul>
 
             <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
-              <p className="font-bold text-gray-900 mb-2">Ready to Start?</p>
+              <p className="font-bold text-gray-900 mb-2">Join Us Today</p>
               <p>
-                The stock market can be a powerful tool to grow your income — but only with the right knowledge and strategy. Join the most trusted share market training in Ghaziabad and take your first step toward financial freedom.
+                If you are serious about mastering intraday trading and building confidence in the stock market, join our intraday trading course in Ghaziabad today.
+              </p>
+              <p className="mt-4 font-semibold text-[#7ED321]">
+                📞 Enroll now and start your journey toward becoming a skilled day trader.
               </p>
             </div>
 

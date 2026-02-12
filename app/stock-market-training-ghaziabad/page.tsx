@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function ShareMarketCourseBlog() {
+export default function StockMarketTrainingBlog() {
   return (
     <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
@@ -20,8 +20,8 @@ export default function ShareMarketCourseBlog() {
             <ArrowLeft size={16} /> Back to Blogs
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            Share Market Course in <span className="text-[#7ED321]">Ghaziabad</span> <br/>
-            Start Your Trading Journey Today
+            Stock Market Training in <span className="text-[#7ED321]">Ghaziabad</span> <br/>
+            Professional Trading Classes
           </h1>
         </div>
       </section>
@@ -32,20 +32,25 @@ export default function ShareMarketCourseBlog() {
           
           <div className="prose max-w-none">
             <p className="font-medium text-xl text-gray-800">
-              Looking for the best share market course in Ghaziabad? Whether you are a student, working professional, or business owner, learning stock market trading can open the door to financial growth and passive income opportunities. Our professional stock market course in Ghaziabad is designed to help beginners and advanced learners understand the market from basics to live trading strategies.
+              Looking for the best stock market training in Ghaziabad to start your trading journey? Our professional share market training in Ghaziabad is specially designed for beginners, working professionals, and aspiring traders who want to learn the stock market in a practical and structured way.
+            </p>
+
+            <p className="mt-8">
+              The stock market offers great earning opportunities, but without proper knowledge and risk management, it can be risky. That’s why our trading training in Ghaziabad focuses on step-by-step learning, live market practice, and real trading strategies that work in today’s market conditions.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-black mt-10 mb-6">
-              In this course, you will learn:
+              What You Will Learn:
             </h2>
             <ul className="space-y-4 list-none pl-0">
               {[
-                "Basics of Stock Market & NSE/BSE",
+                "Basics of Stock Market (NSE & BSE)",
                 "Technical Analysis & Chart Reading",
                 "Intraday & Swing Trading Strategies",
-                "Risk Management Techniques",
-                "Live Trading Practice",
-                "Long-term Investment Planning"
+                "Candlestick Patterns",
+                "Risk & Money Management",
+                "Live Market Trading Sessions",
+                "Psychology of Successful Traders"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-3">
                   <span className="text-[#7ED321] text-xl">✔</span>
@@ -55,23 +60,23 @@ export default function ShareMarketCourseBlog() {
             </ul>
 
             <p className="mt-8">
-              Our expert trainers provide step-by-step guidance so that you can confidently trade in the market. If you are searching for a practical trading course in Ghaziabad, this program focuses on real-time market exposure instead of just theory.
+              Our stock trading classes in Ghaziabad are conducted by experienced market mentors who provide practical exposure instead of just theoretical knowledge. You will get hands-on learning with real-time charts and market analysis sessions.
             </p>
 
             <p className="mt-6">
-              We also offer a specialized investment course in Ghaziabad for those who want to build long-term wealth through smart portfolio management. Learn how to select strong stocks, analyze company fundamentals, and create a profitable investment strategy.
+              Whether you want to trade daily for active income or invest for long-term wealth creation, our training program helps you build strong fundamentals and confidence.
             </p>
 
             <h2 className="text-2xl md:text-3xl font-bold text-black mt-12 mb-6">
-              Why Choose Us?
+              Why Choose Our Share Market Training?
             </h2>
             <ul className="grid sm:grid-cols-2 gap-4 list-none pl-0">
               {[
-                "Live Market Sessions",
-                "Practical Learning Approach",
+                "Live Practical Sessions",
                 "Small Batch Size",
-                "Personalized Mentorship",
-                "Affordable Fees"
+                "Personalized Guidance",
+                "Beginner to Advanced Level Training",
+                "Affordable Course Fees"
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-[#7ED321] transition">
                   <span className="text-yellow-500 text-xl">⭐</span>
@@ -81,9 +86,12 @@ export default function ShareMarketCourseBlog() {
             </ul>
 
             <div className="bg-[#f9f9f9] border-l-4 border-[#7ED321] p-6 mt-12 rounded-r-lg">
-              <p className="font-bold text-gray-900 mb-2">Ready to Start?</p>
+              <p className="font-bold text-gray-900 mb-2">Start Your Journey Today</p>
               <p>
-                The stock market can be a powerful tool to grow your income — but only with the right knowledge and strategy. Join the most trusted share market training in Ghaziabad and take your first step toward financial freedom.
+                If you are serious about building a career in trading or generating side income from the stock market, this is the right place to start. Join the most trusted stock market training in Ghaziabad and take your first step toward financial independence.
+              </p>
+              <p className="mt-4 font-semibold text-[#7ED321]">
+                📞 Enroll today and begin your journey to becoming a skilled trader.
               </p>
             </div>
 
