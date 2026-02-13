@@ -8,7 +8,7 @@ export default function FinancialEducationCenterGhaziabad() {
     <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
       <section
-        className="relative h-[40vh] md:h-[50vh] flex items-center bg-cover bg-center"
+        className="relative min-h-[50vh] pt-20 flex items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/banner/b1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/70" />

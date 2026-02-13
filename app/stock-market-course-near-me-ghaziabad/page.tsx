@@ -8,19 +8,19 @@ export default function StockMarketCourseNearMeGhaziabad() {
     <div className="bg-white text-black">
       {/* ================= BANNER ================= */}
       <section
-        className="relative h-[40vh] md:h-[50vh] flex items-center bg-cover bg-center"
+        className="relative min-h-[50vh] pt-20 flex items-center bg-cover bg-center"
         style={{ backgroundImage: "url('/banner/b1.jpg')" }}
       >
         <div className="absolute inset-0 bg-black/70" />
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
-          <Link 
-            href="/blogs" 
+          <Link
+            href="/blogs"
             className="inline-flex items-center gap-2 text-gray-300 hover:text-[#7ED321] mb-4 transition"
           >
             <ArrowLeft size={16} /> Back to Blogs
           </Link>
           <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            Stock Market Course Near Me in <span className="text-[#7ED321]">Ghaziabad</span> <br/>
+            Stock Market Course Near Me in <span className="text-[#7ED321]">Ghaziabad</span> <br />
             Learn Trading with Practical Training
           </h1>
         </div>
@@ -29,7 +29,7 @@ export default function StockMarketCourseNearMeGhaziabad() {
       {/* ================= CONTENT ================= */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-6 space-y-8 text-gray-700 leading-relaxed text-lg">
-          
+
           <div className="prose max-w-none">
             <p className="font-medium text-xl text-gray-800">
               Are you searching online for the best stock market course near me in Ghaziabad? If yes, then you are at the right place. Our professional share market course near me is specially designed for beginners, working professionals, and aspiring traders who want to learn stock market trading in a simple, practical, and effective way.
