@@ -140,7 +140,7 @@ const allBlogs = [
 export default function BlogClient() {
   const [currentPage, setCurrentPage] = useState(1);
   const blogsPerPage = 6;
-  
+
   // Calculate indices
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
@@ -148,13 +148,13 @@ export default function BlogClient() {
   const totalPages = Math.ceil(allBlogs.length / blogsPerPage);
 
   const handlePageChange = (page: number | string) => {
-     if (typeof page === 'number') {
-        setCurrentPage(page);
-     } else if (page === 'Previous' && currentPage > 1) {
-        setCurrentPage(currentPage - 1);
-     } else if (page === 'Next' && currentPage < totalPages) {
-        setCurrentPage(currentPage + 1);
-     }
+    if (typeof page === 'number') {
+      setCurrentPage(page);
+    } else if (page === 'Previous' && currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    } else if (page === 'Next' && currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
   };
 
   return (
@@ -221,7 +221,7 @@ export default function BlogClient() {
       {/* ================= BLOG GRID ================= */}
       <section className="py-14 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 text-black grid grid-cols-1 sm:grid-cols-2 gap-10">
-            {currentBlogs.map((blog, index) => (
+          {currentBlogs.map((blog, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
@@ -235,12 +235,30 @@ export default function BlogClient() {
                 />
               </div>
 
-              <div className="p-6 flex items-center justify-center min-h-[120px]">
+              <div className="p-6 flex flex-col justify-between h-[300px]">
+                <div>
+                  <div className="flex flex-wrap gap-2 mb-3">
+                    {blog.category.slice(0, 2).map((cat, i) => (
+                      <span key={i} className="text-[10px] font-bold tracking-wider text-[#7ED321] uppercase bg-[#7ED321]/10 px-2 py-1 rounded-sm">
+                        {cat}
+                      </span>
+                    ))}
+                  </div>
+                  <Link href={blog.slug}>
+                    <h3 className="text-xl font-bold mb-3 text-black hover:text-[#7ED321] transition line-clamp-2">
+                      {blog.title}
+                    </h3>
+                  </Link>
+                  <p className="text-gray-500 text-sm mb-4 line-clamp-3">
+                    {blog.desc}
+                  </p>
+                </div>
+
                 <Link
                   href={blog.slug}
-                  className="inline-flex items-center gap-2 text-[#7ED321] font-semibold hover:gap-3 transition border-b-2 border-[#7ED321] pb-1 hover:text-black hover:border-black"
+                  className="inline-flex items-center gap-2 text-[#7ED321] font-bold uppercase text-xs tracking-widest hover:gap-3 transition border-b-2 border-[#7ED321] pb-1 hover:text-black hover:border-black self-start"
                 >
-                  Read More <ArrowRight size={18} />
+                  Read More <ArrowRight size={16} />
                 </Link>
               </div>
             </div>
@@ -252,37 +270,34 @@ export default function BlogClient() {
       <section className="pb-20 bg-gray-50">
         <div className="flex justify-center gap-3">
           <button
-              onClick={() => handlePageChange('Previous')}
-              disabled={currentPage === 1}
-              className={`px-4 py-2 rounded-md border text-sm font-medium ${
-                currentPage === 1 ? "bg-gray-200 text-gray-400 cursor-not-allowed" : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
+            onClick={() => handlePageChange('Previous')}
+            disabled={currentPage === 1}
+            className={`px-4 py-2 rounded-md border text-sm font-medium ${currentPage === 1 ? "bg-gray-200 text-gray-400 cursor-not-allowed" : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
               } transition`}
           >
-              Previous
+            Previous
           </button>
-          
+
           {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
             <button
               key={p}
               onClick={() => handlePageChange(p)}
-              className={`px-4 py-2 rounded-md border text-sm font-medium ${
-                p === currentPage
-                  ? "bg-[#7ED321] text-black"
-                  : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
-              } transition`}
+              className={`px-4 py-2 rounded-md border text-sm font-medium ${p === currentPage
+                ? "bg-[#7ED321] text-black"
+                : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
+                } transition`}
             >
               {p}
             </button>
           ))}
 
           <button
-              onClick={() => handlePageChange('Next')}
-              disabled={currentPage === totalPages}
-              className={`px-4 py-2 rounded-md border text-sm font-medium ${
-                currentPage === totalPages ? "bg-gray-200 text-gray-400 cursor-not-allowed" : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
+            onClick={() => handlePageChange('Next')}
+            disabled={currentPage === totalPages}
+            className={`px-4 py-2 rounded-md border text-sm font-medium ${currentPage === totalPages ? "bg-gray-200 text-gray-400 cursor-not-allowed" : "bg-white text-gray-600 hover:bg-[#7ED321] hover:text-black"
               } transition`}
           >
-              Next
+            Next
           </button>
         </div>
       </section>
