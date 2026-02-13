@@ -199,7 +199,7 @@ export default function BlogClient() {
       </section>
 
       {/* ================= CATEGORY FILTER ================= */}
-      <section className="pb-6 bg-white">
+      {/* <section className="pb-6 bg-white">
         <div className="max-w-7xl mx-auto px-6 flex flex-wrap gap-3 justify-center">
           {[
             "All Post (20)",
@@ -216,7 +216,7 @@ export default function BlogClient() {
             </button>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* ================= BLOG GRID ================= */}
       <section className="py-14 bg-gray-50">
